@@ -9,12 +9,13 @@ public class _8 {
 		
 		Scanner sc = new Scanner(System.in);
 		double sum=0;
-		int n;
+		int n,k=1;
 		
 		n=sc.nextInt();
 		
 		for(int i=1;i<=n;i++){
-			sum+=(1.0/i);
+			sum+=(1.0/i)*k;
+			k*=-1;
 		}
 		System.out.println(sum);
 
